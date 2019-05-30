@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:300,400|Reem+Kufi');
+body {
+    font-family: 'Muli', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@media(min-width:993px) {
+    .nav-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 40px;
+    }
+}
+
+.section {
+    margin-top: 40px;
+}
+
+
+/* ===== Navegacion =====*/
+
+#nav {
+    height: 70px;
+    background: transparent;
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease .5s;
+    box-shadow: none;
+}
+
+#logo {
+    color: #fff;
+    padding: 20px;
+    font-size: 18px;
+    transition: all ease .5s;
+}
+
+.slider .slides {
+    height: 750px !important;
+}
+
+
+/* 
+#hero {
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+} */
+
+#nav.shrink {
+    transition: all ease .5s;
+    background-color: rgba(0, 0, 0);
+}
+
+#nav.shrink #logo {
+    padding: 10px;
+    transition: all ease .5s;
+}
+
+
+/* ===== main =======*/
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(min-width:768px) {
+    .card {
+        flex-basis: calc(33% - 10px);
+    }
+}
